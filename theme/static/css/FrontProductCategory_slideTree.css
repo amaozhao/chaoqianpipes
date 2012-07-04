@@ -1,0 +1,38 @@
+@charset "utf-8";
+.FrontProductCategory_slideTree-default * {
+   font-size:12px;
+	color:#000000;
+	margin:0px;
+	padding:0px;
+}
+.FrontProductCategory_slideTree-default {
+	width:100%;
+}
+.FrontProductCategory_slideTree-default ul  {
+	list-style-type:none;
+
+	padding-left:15px;
+}
+	
+.FrontProductCategory_slideTree-default ul li a {
+	text-decoration:none;
+	background-image: url(../images/neiye4_22.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	height: 24px;
+	font-size: 12px;
+	color: #000000;
+	display: block;
+	vertical-align: middle;
+	padding-left: 15px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #E0E0E0;	
+}
+.FrontProductCategory_slideTree-default ul li a:hover{
+	text-decoration:none;
+	padding-left:15px;
+	background-image: url(../images/neiye4_22.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+}

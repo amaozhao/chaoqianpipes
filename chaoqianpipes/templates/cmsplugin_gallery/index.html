@@ -1,0 +1,171 @@
+{% extends "base_2.html" %}
+{% load i18n cms_tags menu_tags sekizai_tags thumbnail %}
+
+{% block content %}
+	<table width="1003" border="0" align="center" cellpadding="0" cellspacing="0">
+  		<tbody>
+  			<tr>
+		 	<td align="left" bgcolor="#FFFFFF" style="padding-left: 22px;padding-right: 22px; padding-bottom: 14px;">
+		 		
+		 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+      				<tbody>
+      					<tr>
+        					<td width="18%" valign="top" style="padding-top: 20px;">
+    							<link href="{{STATIC_URL}}css/FrontCommonContent_list.css" rel="stylesheet" type="text/css" />
+        						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          							
+          							<tbody>
+          								<tr>
+            								<td width="202" height="30" background="{{STATIC_URL}}images/neiye2_05.gif" class="tw_black_str" style="padding-left:20px;">商品展示</td>
+          								</tr>
+          								<tr>
+            								<td background="{{STATIC_URL}}images/neiye2_17.gif" style="padding:18px;">
+            									<div id="sideMenu">
+            										<link href="{{STATIC_URL}}css/FrontProductCategory_slideTree.css" rel="stylesheet" type="text/css">
+													<div id="FrontProductCategory_slideTree-02" class="FrontProductCategory_slideTree-default">
+														<div class="left_bottom">
+															<div class="right_bottom">
+																<div class="left_top">
+																	<div class="right_top">
+																		<ul id="treemenu1">
+																		{% for cat in categories %}
+																			<li><a href="/products/categories/{{cat.pk}}">{{cat.title}}</a></li>
+																		{% endfor %}
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</td>
+          								</tr>
+          								<tr>
+            								<td><img src="{{STATIC_URL}}images/neiye2_19.gif" width="202" height="12"></td>
+          								</tr>
+        							</tbody>
+        							<tbody>
+        								<script type="text/javascript">
+        								$(document).ready(function(){
+												$('.product_news').remove();
+												$('.content .list .info a').css("height","68px");
+        									}
+        								)
+										</script>
+          								<tr>
+            								<td width="202" height="30" background="{{STATIC_URL}}images/neiye2_05.gif" class="tw_black_str" style="padding-left:20px;">新闻动态</td>
+          								</tr>
+          								<tr>
+            								<td background="{{STATIC_URL}}images/neiye2_17.gif" style="padding:18px;width:200px;">
+            									<div id="sideMenu">
+            										<link href="{{STATIC_URL}}css/FrontProductCategory_slideTree.css" rel="stylesheet" type="text/css">
+													<div id="FrontProductCategory_slideTree-02" class="FrontProductCategory_slideTree-default">
+														<div class="left_bottom">
+															<div class="right_bottom">
+																<div class="left_top">
+																	<div class="right_top">
+																		{% placeholder news %}
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</td>
+          								</tr>
+          								<tr>
+            								<td><img src="{{STATIC_URL}}images/neiye2_19.gif" width="202" height="12"></td>
+          								</tr>
+        							</tbody>
+								</table>
+          						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+            						<tbody>
+            							<tr>
+              								<td width="202" style="padding-top:18px;"><a href="{% page_url 'products' %}"><img src="{{STATIC_URL}}images/neiye2_21.gif" width="202" height="30"></a></td>
+            							</tr>
+            							<tr>
+              								<td style="padding-top:5px;"><a href="{% page_url 'contact' %}"><img src="{{STATIC_URL}}images/neiye2_23.gif" width="202" height="30"></a></td>
+            							</tr>
+          							</tbody>
+      							</table>
+  							</td>
+        					<td width="82%" align="right" valign="top" style="padding-top: 22px;">
+        						<table width="733" border="0" cellpadding="0" cellspacing="0">
+	          						<tbody>
+	          							<tr>
+	            							<td height="29" align="left" background="{{STATIC_URL}}images/neiye2_07.gif" class="tw_black_str" style="padding-left:35px;">{% page_attribute "page_title" request.current_page %}</td>
+	          							</tr>
+	          							<tr>
+	          								{% block maincontent %}
+												<link href="{{STATIC_URL}}css/FrontProduct_list.css" rel="stylesheet" type="text/css">
+												<td align="left" bgcolor="#FFFFFF" class="zybk" style="padding:20px;">
+				          							
+				          							<div id="elem-FrontProduct_simpleSearch-cpsou" name="商品简单搜索">
+﻿														<link href="{{STATIC_URL}}css/FrontProduct_simpleSearch-default.css" rel="stylesheet" type="text/css">
+														<div id="FrontProduct_simpleSearch-cpsou" class="FrontProduct_simpleSearch-default">
+															<form id="FrontProduct_simpleSearch-cpsou_searchForm" method="get" action="/products/search/">{% csrf_token %}
+																<label>关键字：</label>
+																<input id="query_name" name="keyword" type="text" value="" maxlength="20">
+																<input type="submit" class="button01" value="开始查询">
+															</form>
+														</div>
+													</div>
+				          							
+													<div id="elem-FrontProduct_list-cpnr" name="商品概要信息列表展示">
+														<div id="FrontProduct_list-cpnr" class="FrontProduct_list-default">
+															{% for image in images %}
+															<dl>
+																<dt>
+														    		<a href="{{ image.get_absolute_url }}" title="{{ image.title }}">
+													    			{% thumbnail image.src "132x102" as img %}
+																	<img src="{{ img.url }}" alt="{{ image.alt }}">
+																	{% endthumbnail %}
+																</a>
+																</dt>
+																<dd>
+																	<p class="title">
+																		<a href="{{ image.get_absolute_url }}" title="{{ image.title }}"><span>{{ image.title }}</span></a>
+																	</p>
+																	<p class="info002">
+																		<span class="price1"></span>
+																		<span class="price2"></span>
+																	</p>
+																</dd>
+															</dl>
+															{% endfor %}
+															
+															<div class="pagetag pagetag02">
+																共{{count}}条
+																{% if page_obj.has_previous %}
+																<a href="?page={{ page_obj.previous_page_number }}" title="上页" >上页</a>
+																{% else %}
+																上页
+																{% endif %}
+																|
+																{% if page_obj.has_next %}
+																<a href="?page={{ page_obj.next_page_number }}">下页</a>
+																{% else %}
+																下页
+																{% endif %}
+																第{{page_obj.number}}/{{ page_obj.paginator.num_pages }}页
+															</div>
+															
+														</div>
+													</div>
+												</td>
+											{% endblock %}
+	          							</tr>
+	          							<tr>
+	            							<td><img src="{{STATIC_URL}}images/neiye2_27.gif" width="733" height="11"></td>
+	          							</tr>
+	    							</tbody>
+    							</table>
+							</td>
+						</tr>
+					</tbody>
+    			</table>
+			</td>
+			</tr>
+		</tbody>
+	</table>
+{% endblock %}

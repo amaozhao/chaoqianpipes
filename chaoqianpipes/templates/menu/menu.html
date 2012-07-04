@@ -1,0 +1,12 @@
+{% load cms_tags menu_tags %}
+<div id="slidingBlock">
+	<div id="nav_box">
+		{% for child in children %}
+			<h4 class="menuOn"><a href="{{ child.attr.redirect_url|default:child.get_absolute_url }}">{{ child.get_menu_title }}</a></h4>
+			{% if forloop.last %}
+			{% else %}
+			<div id="line">&nbsp;</div>
+			{% endif %}
+        {% endfor %}
+    </div>
+</div>

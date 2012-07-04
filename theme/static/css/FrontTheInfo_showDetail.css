@@ -1,0 +1,425 @@
+/* 详细信息展示 样式3 开始 */
+
+.FrontTheInfo_showDetail-03 {
+	width:100%;
+	font-size:12px;
+	margin:0px;
+	padding:0px;
+}
+.FrontTheInfo_showDetail-03  img {
+	vertical-align:middle;
+}
+.FrontTheInfo_showDetail-03 .head{
+	width:100%;
+	clear:both;
+	min-width:100%;
+}
+.FrontTheInfo_showDetail-03 .headleft{
+	width:90%;
+	text-align:center;
+}
+/*标题*/
+.FrontTheInfo_showDetail-03 .headleft h3 {
+	font-size:14px;
+	min-width:100%;
+}
+.FrontTheInfo_showDetail-03 .headright{
+	width:100%;
+	text-align:center;
+}
+.FrontTheInfo_showDetail-03 .headright ul {
+	list-style-type:none;
+}
+.FrontTheInfo_showDetail-03 .headright li {
+	line-height:30px;
+	color:#565656;
+	min-width:100%;
+}
+/*分割线*/
+.FrontTheInfo_showDetail-03 .head p.line {
+	background:url(../../images/infoPublish/articularinfo_show_line.gif) left top repeat-x;
+	margin-top:10px;
+}
+/*正文*/
+.FrontTheInfo_showDetail-03 .content{
+	text-align:left;
+	padding:5px;
+}
+.FrontTheInfo_showDetail-03 .content p {
+	text-align:left;
+	padding:10px 5px;
+	line-height:20px;
+}
+.FrontTheInfo_showDetail-03 .content p.print {
+	text-align:right;
+	padding:0px 0px;
+	color:#414A88;
+}
+.FrontTheInfo_showDetail-03 .content p.print a { 
+	color:#414A88;
+	text-decoration:underline;
+}
+.FrontTheInfo_showDetail-03 .content p.print a:hover{ 
+	color:#414A88;
+	text-decoration:none;
+}
+/*分割线*/
+.FrontTheInfo_showDetail-03 .content p.lineB {
+	background:url() left top repeat-x;
+	border-bottom:1px dashed #B6CB4C;
+	padding:0px;
+}
+/*关键词*/
+.FrontTheInfo_showDetail-03 .content p.keyword {
+	padding-top:10px;
+}
+.FrontTheInfo_showDetail-03 .content p.keyword a { 
+	color:#000000;
+	text-decoration:none;
+}
+.FrontTheInfo_showDetail-03 .content p.keyword a:hover{ 
+	color:#000000;
+	text-decoration:underline;
+}
+.FrontTheInfo_showDetail-03 .head ul {
+	list-style-type:none;
+}
+/*当前位置*/
+.FrontTheInfo_showDetail-03 .head li span.category {
+	vertical-align:left;
+	color:#767519;
+	width:100%;
+	display:block;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+/*当前位置--链接文字样式*/
+.FrontTheInfo_showDetail-03 .head li.printcate a {
+	color:#666666;
+	text-decoration:underline;
+}
+.FrontTheInfo_showDetail-03 .head li.printcate a:hover {
+	color:#666666;
+	text-decoration:none;
+}
+/*作者*/
+.FrontTheInfo_showDetail-03 .headright li span.author{
+	color:#666666;
+	margin-right:15px;
+}
+/*来源*/
+.FrontTheInfo_showDetail-03 .headright li span.source{
+	color:#666666;
+	margin-right:15px;
+}
+/*日期*/
+.FrontTheInfo_showDetail-03 .headright li span.date {
+	color:#666666;
+	margin-right:5px;
+}
+/*时间*/
+.FrontTheInfo_showDetail-03 .headright li span.time {
+	color:#666666;
+	margin-right:15px;
+}
+
+/*好友推荐*/
+.FrontTheInfo_showDetail-03 .friendsimg{ 
+    float:right;
+	margin:5px 5px;
+	text-decoration:none;
+}
+
+.FrontTheInfo_showDetail-03 .friendsimg a {
+	text-decoration:none;
+}
+.FrontTheInfo_showDetail-03 .friendsimg a:hover {
+	text-decoration:none;
+}
+.FrontTheInfo_showDetail-03 .friends{ 
+    float:right;
+	margin:5px 5px;
+	text-decoration:none;
+}
+.FrontTheInfo_showDetail-03 .friends a {
+	color:#B20403;
+	text-decoration:underline;
+}
+.FrontTheInfo_showDetail-03 .friends a:hover {
+	color:#B20403;
+	text-decoration:none;
+}
+/* 详细信息展示 样式3 结束 */
+
+/* 详细信息展示 样式2 开始*/
+
+.FrontTheInfo_showDetail-02 {
+	
+	background-color:#ffffff;
+	border:1px solid #ffffff;
+	overflow:hidden;
+	padding:10px;
+	font-size:12px;
+	margin:0px;
+}
+.FrontTheInfo_showDetail-02  img {
+	vertical-align:middle;
+}
+.FrontTheInfo_showDetail-02 .head{
+	width:100%;
+	clear:both;
+}
+.FrontTheInfo_showDetail-02 .headleft{
+	width:42%;
+	float:left;
+	padding-left:20px;
+}
+/*标题*/
+.FrontTheInfo_showDetail-02 .headleft h3 {
+	font-size:14px;
+}
+.FrontTheInfo_showDetail-02 .headleft ul {
+	list-style-type:none;
+}
+.FrontTheInfo_showDetail-02 .headleft li {
+	padding-top:5px;
+}
+.FrontTheInfo_showDetail-02 .headright{
+	width:53%;
+	float:left;
+	text-align:right;
+}
+.FrontTheInfo_showDetail-02 .headright ul {
+	list-style-type:none;
+}
+.FrontTheInfo_showDetail-02 .headright li {
+	line-height:30px;
+}
+.FrontTheInfo_showDetail-02 .headright li .print a {
+	color:#B20501;
+	text-decoration:underline;
+}
+.FrontTheInfo_showDetail-02 .headright li .print a:hover {
+	color:#B20501;
+	text-decoration:none;
+}
+/*分割线*/
+.FrontTheInfo_showDetail-02 p.line {
+	background:url() left top repeat-x;
+	border-top:1px dashed #000000;
+	clear:both;
+	padding:0px;
+}
+/*正文*/
+.FrontTheInfo_showDetail-02 .content{
+	float:left;
+	width:100%;
+	text-align:left;
+	padding:5px;
+}
+.FrontTheInfo_showDetail-02 .content p {
+	text-align:left;
+	padding:10px 5px;
+	line-height:20px;
+}
+.FrontTheInfo_showDetail-02 .head ul {
+	list-style-type:none;
+}
+/*当前位置*/
+.FrontTheInfo_showDetail-02 .head li span.category {
+	vertical-align:left;
+	color:#767519;
+	width:100%;
+	display:block;
+	padding-bottom:10px;
+}
+/*作者*/
+.FrontTheInfo_showDetail-02 .headleft li span.author{
+	color:#767519;
+	margin-right:15px;
+	padding-top:10px;
+}
+/*来源*/
+.FrontTheInfo_showDetail-02 .headleft li span.source{
+	color:#767519;
+	margin-right:15px;
+	padding-top:10px;
+}
+/*当前位置处链接文字样式*/
+.FrontTheInfo_showDetail-02 .head li.print a {
+	color:#B20403;
+	text-decoration:underline;
+}
+.FrontTheInfo_showDetail-02 .head li.print a:hover {
+	color:#B20403;
+	text-decoration:none;
+}
+
+/*好友推荐*/
+.FrontTheInfo_showDetail-02 .friendsimg{ 
+    float:right;
+	margin:5px 5px;
+	text-decoration:none;
+}
+
+.FrontTheInfo_showDetail-02 .friendsimg a {
+	text-decoration:none;
+}
+.FrontTheInfo_showDetail-02 .friendsimg a:hover {
+	text-decoration:none;
+}
+.FrontTheInfo_showDetail-02 .friends{ 
+    float:right;
+	margin:5px 5px;
+	text-decoration:none;
+}
+.FrontTheInfo_showDetail-02 .friends a {
+	color:#B20403;
+	text-decoration:underline;
+}
+.FrontTheInfo_showDetail-02 .friends a:hover {
+	color:#B20403;
+	text-decoration:none;
+}
+/* 详细信息展示 样式2 结束*/
+
+/* 详细信息展示 缺省样式 */
+
+.FrontTheInfo_showDetail-default {
+	width:650px;
+	background-color:#ffffff;
+	border:1px solid #ffffff;
+	overflow:hidden;
+	padding:10px;
+	margin-top:7px;
+	font-size:12px;
+}
+.FrontTheInfo_showDetail-default  img {
+	vertical-align:middle;
+}
+.FrontTheInfo_showDetail-default .head {
+	width:100%;
+	clear:both;
+}
+/*分割线*/
+.FrontTheInfo_showDetail-default .head p.line {
+	margin:5px 0px;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #AAAF87;
+}
+.FrontTheInfo_showDetail-default .headleft {
+	width:100%;
+	text-align:center;
+}
+/*文章标题*/
+.FrontTheInfo_showDetail-default .headleft h3 {
+	font-size:14px;
+	color:#000000;
+	line-height:40px;
+}
+.FrontTheInfo_showDetail-default .headright{
+	width:100%;
+	text-align:center;
+}
+.FrontTheInfo_showDetail-default .headright ul {
+	list-style-type:none;
+}
+.FrontTheInfo_showDetail-default .headright li {
+	line-height:30px;
+	color:#565656;
+	text-align:left;
+}
+/*当前位置*/
+.FrontTheInfo_showDetail-default .headright li span.category {
+	vertical-align:left;
+	color:#666666;
+	width:100%;
+	display:block;
+}
+/*作者*/
+.FrontTheInfo_showDetail-default .headright li span.author{
+	color:#666666;
+	margin-right:15px;
+}
+/*日期*/
+.FrontTheInfo_showDetail-default .headright li span.date {
+	color:#666666;
+	margin-right:5px;
+}
+/*时间*/
+.FrontTheInfo_showDetail-default .headright li span.time {
+	color:#666666;
+	margin-right:15px;
+}
+/*来源*/
+.FrontTheInfo_showDetail-default .headright li span.source{
+	color:#666666;
+	margin-right:15px;
+}
+/*浏览次数*/
+.FrontTheInfo_showDetail-default .headright li span.browes {
+	color:#666666;
+}
+/*当前位置处链接文字样式*/
+.FrontTheInfo_showDetail-default .headright li.print a {
+	color:#666666;
+	text-decoration:underline;
+}
+.FrontTheInfo_showDetail-default .headright li.print a:hover {
+	color:#666666;
+	text-decoration:none;
+}	
+.FrontTheInfo_showDetail-default .headright li.print2 {
+	text-align:right;
+}
+/*正文*/
+.FrontTheInfo_showDetail-default .content{
+	text-align:left;
+	padding:0px;
+}
+.FrontTheInfo_showDetail-default .content p {
+	text-align:left;
+	padding:0px 5px;
+	
+}
+/*关键词*/
+.FrontTheInfo_showDetail-default .content p.keyword {
+	padding-top:10px;
+	color:#000000;
+}
+.FrontTheInfo_showDetail-default .content p.keyword a { 
+	color:#22684E;
+	text-decoration:underline;
+}
+.FrontTheInfo_showDetail-default .content p.keyword a:hover{ 
+	color:#22684E;
+	text-decoration:none;
+}
+/*好友推荐*/
+.FrontTheInfo_showDetail-default .friendsimg{ 
+    float:right;
+	margin:5px 5px;
+	text-decoration:none;
+}
+
+.FrontTheInfo_showDetail-default .friendsimg a {
+	text-decoration:none;
+}
+.FrontTheInfo_showDetail-default .friendsimg a:hover {
+	text-decoration:none;
+}
+.FrontTheInfo_showDetail-default .friends{ 
+    float:right;
+	margin:5px 5px;
+	text-decoration:none;
+}
+.FrontTheInfo_showDetail-default .friends a {
+	color:#B20403;
+	text-decoration:underline;
+}
+.FrontTheInfo_showDetail-default .friends a:hover {
+	color:#B20403;
+	text-decoration:none;
+}
+/* 详细信息展示 缺省样式 结束 */

@@ -1,0 +1,12 @@
+<div class="content">
+	{% for news in latest %}
+	<ul class="list">
+		<li>
+			<span class="info">
+				<a href="{{ news.get_absolute_url }}">{{ news.title }}</a>
+			</span>
+			<span class="date product_news">{{ news.pub_date|date:"Y-m-d"}}</span>
+		</li>
+	</ul>
+	{% endfor %}
+</div>

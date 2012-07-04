@@ -1,0 +1,307 @@
+@charset "utf-8";
+
+/*商品概要信息列表展示 全局样式*/
+
+ul,li{/** 定义有序列表的样式 **/
+	list-style:none;
+}
+.clear{ clear:both;}
+/** comp-frontproduct_hotsalelist **/
+.FrontProduct_list-default *{
+	margin:0;
+	padding:0;
+	font-size: 12px;
+	line-height:1.5em;
+}
+
+.FrontProduct_list-default{
+	width:100%;
+	text-align:left;
+	color:#000;
+}
+/*列表样式*/
+.FrontProduct_list-default dl{
+	width:28%;
+	float:left;
+	padding:15px 0 0 20px;
+}
+/*列表标题样式*/
+.FrontProduct_list-default dl dt{
+	width:100%;
+	vertical-align:middle;
+}
+/*图片样式*/
+.FrontProduct_list-default dl dt img{
+	border:1px solid #DEDEDC;
+	text-align:center;
+	width:130px;
+	height:100px;
+	margin-bottom:10px;
+	vertical-align:middle;
+}
+.FrontProduct_list-default dl dd{
+	width:100%;
+	height:120px;
+}
+/*图片相关信息样式*/
+.FrontProduct_list-default p {
+	padding-left:;
+}
+/*图片相关信息样式----(图片简要说明)*/
+.FrontProduct_list-default p.title {
+	color:#829619;
+	font-weight:bold;
+	text-decoration:none;
+	line-height:25px;
+	margin-left:20px;
+}
+.FrontProduct_list-default p.title a {
+	color:#829619;
+}
+/*图片相关信息样式----(价格)*/
+.FrontProduct_list-default p.info001 span{
+	width:49%;
+	display:block;
+	float:left;
+	line-height:1em;
+}
+.FrontProduct_list-default p.info002 {
+	padding-left:;
+}
+.FrontProduct_list-default p.info002 span{
+	width:49%;
+	display:block;
+	float:left;
+}
+/*顶底清除样式*/
+.FrontProduct_list-default .compareTop{
+    clear:both;
+}
+.FrontProduct_list-default .compareBottom{
+    clear:both;
+}
+/*价格数字样式*/
+.FrontProduct_list-default .member{
+	color:#BD9444;
+}
+/*商品描述样式*/
+.FrontProduct_list-default .picture{
+	color:#A16162;
+}
+.FrontProduct_list-default .rukou{
+	color:#EB5D11;
+	margin-left:25px;
+}
+/*当前位置样式*/
+.FrontProduct_list-default h3 {
+	color:#839819;
+	margin:10px 0;
+}
+.FrontProduct_list-default h3 a {
+	color:#839819;
+	margin:10px 0;
+}
+.FrontProduct_list-default h3 a:visited  {
+	color:#839819;
+}
+/*翻页样式*/
+.pagetag{
+	clear:both;
+	text-align:right;
+	margin-bottom:10px;
+}
+.FrontProduct_list-default .description{
+   
+
+}
+
+/*---------商品概要信息列表展示02 全局样式----------------*/
+.FrontProduct_list-02 *{
+	margin:0;
+	padding:0;
+	font-size: 12px;
+}
+.FrontProduct_list-02{
+	width:100%;
+	text-align:left;
+	color:#000;
+	margin:0px 0px 20px 0px;
+}
+/*排序样式*/
+.frontproduct_orderby {
+	text-align:right;
+	margin-bottom:7px;
+}
+/*图片样式*/
+.FrontProduct_list-02 ul.img{
+	float:left;
+	width:20%;
+	text-align:center;
+	padding:10px 0;
+	margin:0px 10px 0px 0px;
+
+}
+/*列表样式*/
+.FrontProduct_list-02 ul{
+vertical-align:middle;
+}
+/*当前位置样式*/
+.FrontProduct_list-02 h3.local {
+   color:#FF3300;
+	font-size:14px;
+	padding:0 20 0 10;
+	margin:0px 0;
+	border-bottom:1px dashed #cccccc;
+}
+.FrontProduct_list-description{
+    color:#666666;
+	font-size:14px;
+	padding:0 20 0 10;
+	margin:0px 0;
+   
+
+}
+
+.FrontProduct_list-02 h3.local a {
+	color:#666666;
+	margin:20px 0;
+}
+.FrontProduct_list-02 h3.local a:visited  {
+	color:#666666;
+}
+/*内容标题样式*/
+.FrontProduct_list-02 h3{
+	color:#666666;
+	height:20px;
+	padding:0px 0;
+	margin:10px 0 0 0;
+}
+.FrontProduct_list-02 h3 a {
+	color:#666666;
+	text-decoration:none;
+}
+.FrontProduct_list-02 h3 a:hover {
+	color:#666666;
+	text-decoration:underline;
+}
+/*左浮动图片样式*/
+.FrontProduct_list-02 ul.checkboxCompare{
+    float:left;
+    margin-top:50px;
+
+}
+/*右商品内容样式*/
+.FrontProduct_list-02 ul.right_info{
+	float:left;
+	width:78%;
+	padding:0px;
+}
+.FrontProduct_list-02 ul.img img{
+	width:130px;
+	height:100px;
+}
+/*右商品内容样式------(左浮动商品编号\浏览次数)*/
+.FrontProduct_list-02 li.info_left{
+	float:left;
+	color:#5B5B5B;
+	width:100%;
+}
+.FrontProduct_list-02 li.info_left p{
+	float:left;
+	width:33%;
+	line-height:20px;
+}
+/*右商品内容样式------(右侧市场价\零售价)*/
+.FrontProduct_list-02 li.info_right{
+	float:left;
+	width:100%;
+	text-align:center;
+	margin-top:8px;
+}
+.FrontProduct_list-02 li.info_right p{
+	float:left;
+	margin:0 25px 0 0;
+	line-height:20px;
+}
+.FrontProduct_list-02 li.info_right p span{
+	display:block;
+}
+/*右商品内容样式------(商品描述)*/
+
+.FrontProduct_list-02 ul.info_bewrite{
+	float:left;
+	width:70%;
+	margin-top:8px;
+}
+.FrontProduct_list-02 ul.info_bewrite p{
+	padding:0px;
+	line-height:18px;
+}
+.FrontProduct_list-02 .picture{
+	color:#A26260;
+
+}
+
+/*价格数字样式*/
+.FrontProduct_list-02 .member{
+	color:#FE6700;
+	font-weight:bold;
+}
+/*购买样式*/
+.FrontProduct_list-02 .button_buy {
+	width: 47px
+	height: 25px
+	border: none;
+	font-weight: bold;
+	color: #006600;
+	font-size: 14px;
+}
+/*询价样式*/
+.FrontProduct_list-02 .button_quaere {
+	width:47px
+	height:25px
+	border: none;
+	color: #0D3B99;
+	font-weight: bold;
+	font-size: 14px;
+}
+.FrontProduct_list-02 .rukou1{
+	color:#595959;
+	margin:8px 15px 0px 0px;
+}
+.FrontProduct_list-02 .rukou2 {
+	background:#C5D582;
+	padding:0 2px;
+	height:10px;
+	border:#A4C121 solid 1px;
+	cursor:pointer;
+	margin:0px 5px;
+}
+/*顶底清除样式*/
+.FrontProduct_list-02 .compareTop{
+    clear:both;
+}
+.FrontProduct_list-02 .compareBottom{
+    padding:5px 2px;
+}
+/*没有相关信息样式*/
+ .noinfo{
+	font-size:20px;
+	font-weight:bold;
+	font-family:宋体;
+	color:#45a4d3
+}
+/*翻页样式*/
+.pagetag .input {
+	border:1px solid #A2A2A2;
+	color:#595959;
+	line-height:1.5em;
+}
+.pagetag .buttonpage {
+	background:#C5D582;
+	padding:0 2px;
+	height:20px;
+	border:#A4C121 solid 1px;
+	cursor:pointer;
+	margin:0px 5px;
+}

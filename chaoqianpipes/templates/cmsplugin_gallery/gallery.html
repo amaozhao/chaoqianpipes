@@ -1,0 +1,60 @@
+{% load thumbnail %}
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/scrollable-horizontal.css" />
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/scrollable-buttons.css" />
+
+<style>
+#actionButtons {
+	text-align:center;
+	margin-top:30px;
+}
+</style>
+<!-- "previous page" action -->
+<a class="prev browse left"></a>
+
+<!-- root element for scrollable -->
+<div class="scrollable" id="scroller">   
+    <div class="items">
+	    <div>
+	        {% for image in images|slice:":5" %}
+	            <a href="{{ image.get_absolute_url }}" title='{{image.title}}'>
+                    {% thumbnail image.src "120x102" as img %}
+                      	<img src="{{ img.url }}" alt="{{ image.alt }}" />
+              		{% endthumbnail %}
+                </a>
+	        {% endfor %}
+	    </div>
+	    <div>
+	        {% for image in images|slice:"5:10" %}
+	            <a href="{{ image.get_absolute_url }}" title='{{image.title}}'>
+                    {% thumbnail image.src "120x102" as img %}
+                      	<img src="{{ img.url }}" alt="{{ image.alt }}" />
+              		{% endthumbnail %}
+                </a>
+	        {% endfor %}
+	    </div>
+	    <div>
+	        {% for image in images|slice:"10:15" %}
+	            <a href="{{ image.get_absolute_url }}" title='{{image.title}}'>
+                    {% thumbnail image.src "120x102" as img %}
+                      	<img src="{{ img.url }}" alt="{{ image.alt }}" />
+              		{% endthumbnail %}
+                </a>
+	        {% endfor %}
+	    </div>
+	    <div>
+	        {% for image in images|slice:"15:20" %}
+	            <a href="{{ image.get_absolute_url }}" title='{{image.title}}'>
+                    {% thumbnail image.src "120x102" as img %}
+                      	<img src="{{ img.url }}" alt="{{ image.alt }}" />
+              		{% endthumbnail %}
+                </a>
+	        {% endfor %}
+	    </div>
+    </div>
+</div>
+
+<a class="next browse right"></a>
+
+
+<br clear="all" />
+

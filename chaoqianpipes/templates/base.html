@@ -1,0 +1,320 @@
+{% load i18n cms_tags menu_tags sekizai_tags %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style type="text/css">
+<!--
+.STYLE1 {font-weight: bold}
+-->
+</style>
+	{% render_block "css" %}
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>{% block title %}{% page_attribute page_title %}{%endblock%}-上海杰缘管业有限公司</title>
+	<meta name="description" content="{% page_attribute meta_description %}"/>
+    <meta name="keywords" content="{% page_attribute meta_keywords %}"/>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	{% addtoblock "css" %}
+		<link href="{{STATIC_URL}}css/style.css" rel="stylesheet" type="text/css" />
+		<link href="{{STATIC_URL}}css/nivo-slider.css" rel="stylesheet" type="text/css" />
+	{% endaddtoblock %}
+	
+</head>
+
+<body>
+	{% cms_toolbar %}
+	<table width="1003" border="0" align="center" cellpadding="0" cellspacing="0">
+  		<tbody>
+  			<tr>
+    			<td align="center" bgcolor="#FFFFFF">
+    				<div id="elem-FrontSpecify_show-souyedh" name="说明页展示">
+						<div id="FrontSpecify_show-souyedh" class="FrontSpecify_show-default">
+	  						<div class="content">
+	    						<div class="style1">
+	    							<table border="0" cellspacing="0" cellpadding="0" width="1003" align="center">
+    									<tbody>
+									        <tr>
+									            <td bgcolor="#ffffff" align="center"><a href="http://www.chaoqianpipes.com/"><img border="0" usemap="#Map" alt="超前集团" src="{{STATIC_URL}}images/index_02.gif"></a></td>
+									        </tr>
+									        <tr>
+									            <td bgcolor="#ffffff" align="left">
+										            <div id="slidingBlock">
+										            	{% show_menu 0 100 100 100 %}
+										            </div>
+									            </td>
+									        </tr>
+    									</tbody>
+									</table>
+								</div>
+	  						</div>
+						</div>
+  					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	
+	<table width="1003" border="0" align="center" cellpadding="0" cellspacing="0">
+  		<tbody>
+  			<tr>
+				<td align="center" bgcolor="#FFFFFF" style="padding-left:17px; padding-right:18px;">
+					<div id="elem-FrontSpecify_show-aboutusbander" name="说明页展示">
+						<div id="FrontSpecify_show-aboutusbander" class="FrontSpecify_show-default">
+	  						<div class="content" style="width:958px;margin:0px auto;">
+	    						<div id="header-images" class="nivoSlider">
+	    							<img height="268" width="958" alt="" src="{{STATIC_URL}}images/neiye_03.jpg">
+	    							<img height="268" width="958" alt="" src="{{STATIC_URL}}images/lxwm.jpg">
+	    							<img height="268" width="958" alt="" src="{{STATIC_URL}}images/kfzx.jpg">
+	    							<img height="268" width="958" alt="" src="{{STATIC_URL}}images/news.jpg">
+	    							<img height="268" width="958" alt="" src="{{STATIC_URL}}images/shangpinzhanshi.jpg">
+    							</div>
+	  						</div>
+						</div>
+  					</div>
+				</td>
+  			</tr>
+		</tbody>
+	</table>
+	
+	{% block content %}
+	<table width="1003" border="0" align="center" cellpadding="0" cellspacing="0">
+  		<tr>
+    		<td align="center" bgcolor="#FFFFFF" style="padding-left: 22px;padding-right: 22px; padding-bottom: 14px;">
+    			<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+        			<tr>
+          				<td width="229" align="left" valign="top" background="{{STATIC_URL}}images/index_19.gif" style="PADDING-LEFT: 13px">
+          					<div id="elem-FrontSpecify_show-souyeshipin" name="说明页展示">
+								<div id="FrontSpecify_show-souyeshipin" class="FrontSpecify_show-default">
+	  							<div class="content">
+	    							<div class="style1">
+	    								<table cellspacing="0" cellpadding="0" width="100" border="0">
+              								<tbody>
+                								<tr>
+								                  	<td class="line" style="PADDING-TOP: 10px" align="left" width="14"><img height="16" src="{{STATIC_URL}}images/icon1.jpg" width="7" /></td>
+								                  	<td class="line" style="PADDING-TOP: 10px" width="206" height="28"><span class="tw_black_str">公司宣传片</span></td>
+                								</tr>
+                								<tr>
+                  									<td style="PADDING-TOP: 5px" colspan="2">
+                  										<table cellspacing="0" cellpadding="0" width="100" border="0">
+	                      									<tbody>
+	                        									<tr>
+	                          										<td class="kuang"><img height="145" src="{{STATIC_URL}}images/index_33.jpg" width="218" /></td>
+	                        									</tr>
+	                      									</tbody>
+                  										</table>
+              										</td>
+                								</tr>
+              								</tbody>
+          								</table>
+      								</div>
+	  							</div>
+								</div>
+  							</div>
+	            			<div id="elem-FrontSpecify_show-souyeanli" name="说明页展示">
+								<div id="FrontSpecify_show-souyeanli" class="FrontSpecify_show-default">
+		  							<div class="content">
+		    							<div class="style1">
+		    								<table style="MARGIN-TOP: 10px" cellspacing="0" cellpadding="0" width="100" border="0">
+	              								<tr>
+	                								<td class="line" align="left" width="15"><span class="line" style="PADDING-TOP: 10px"><img height="16" src="{{STATIC_URL}}images/icon1.jpg" width="7" /></span></td>
+	                								<td class="line" width="197" height="28"><span class="tw_black_str">超前最新案例</span></td>
+	              								</tr>
+	              								<tr>
+	                								<td style="PADDING-TOP: 5px" colspan="2">
+	                									<table width="100" border="0" cellpadding="4" cellspacing="0" class="kuang">
+		                    								<tr>
+		                      									<td><img height="124" src="{{STATIC_URL}}images/index_53.jpg" width="210" /></td>
+		                    								</tr>
+	                									</table>
+	            									</td>
+	              								</tr>
+	            							</table>
+	        							</div>
+		  							</div>
+								</div>
+	  						</div>
+						</td>
+          				<td width="15" align="center" background="{{STATIC_URL}}images/index_19.gif" style="PADDING-TOP: 10px"><img height="362" src="{{STATIC_URL}}images/index_23.gif" width="1" /></td>
+	          			<td width="454" align="center" valign="top" background="{{STATIC_URL}}images/index_19.gif">
+	          				<div id="elem-FrontSpecify_show-souyeguanyuwm" name="说明页展示">
+								<div id="FrontSpecify_show-souyeguanyuwm" class="FrontSpecify_show-default">
+			  						<div class="content">
+			    						<div class="style1">
+			    							<table border="0" cellpadding="0" cellspacing="0" width="98%">
+												<tbody>
+													<tr>
+														<td align="middle" class="line" style="padding-top: 10px;" valign="center" width="13">
+															<span class="line" style="padding-top: 10px;"><img alt="" height="16" src="{{STATIC_URL}}images/icon1.jpg" width="7" /></span></td>
+														<td align="left" class="line" height="28" style="padding-top: 10px;" width="353">
+															<span class="tw_black_str">公司简介</span></td>
+														<td align="right" class="line" style="padding-top: 10px;">
+															{% comment %}<a href="{% page_url "group_introduction" %}">&gt;&gt;more</a>{% endcomment %}
+														</td>
+													</tr>
+													<tr>
+														<td colspan="3" style="padding-top: 5px;">
+															<table border="0" cellpadding="2" cellspacing="0" width="100%">
+																<tbody>
+																	<tr>
+																		<td width="38%">
+																			<table border="0" cellpadding="2" cellspacing="0" class="kuang" width="100%">
+																				<tbody>
+																					<tr>
+																						<td>
+																							<img alt="" height="104" src="{{STATIC_URL}}images/index_36.jpg" width="150" /></td>
+																					</tr>
+																				</tbody>
+																			</table>
+																		</td>
+																		<td align="left" width="62%">
+																			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 上海杰缘管业有限公司隶属<strong>超前集团</strong>，是专业从事管道产品的开发、制造和工程服务于一体的企业，全面负责&ldquo;超前&rdquo;牌和&ldquo;超前钻石&rdquo;牌建筑铸铁管及其配件的经销和生产......</td>
+																	</tr>
+																</tbody>
+															</table>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+			  						</div>
+								</div>
+							</div>
+	            			<table style="MARGIN-TOP: 15px" cellspacing="0" cellpadding="0" width="98%" border="0">
+	              				<tbody>
+	                				<tr>
+	                  					<td class="line" style="PADDING-TOP: 10px" valign="center" align="left" width="17"><span class="line" style="PADDING-TOP: 10px"><img height="16" src="{{STATIC_URL}}images/icon1.jpg" width="7" /></span></td>
+	                  					<td class="line" style="PADDING-TOP: 10px;" align="left" width="383" height="28"><span class="tw_black_str">公司新闻</span></td>
+	                				</tr>
+	                				<tr>
+	                  					<td style="PADDING-TOP: 15px" align="left" colspan="2">
+	                  						<div id="elem-FrontInfo_listByAsyncWithOutAjax-hantiao02" name="信息列表（无“加载中”字样）">
+												<div class="FrontInfo_listByAsyncWithOutAjax-02" id="FrontInfo_listByAsyncWithOutAjax-hantiao02">
+													<div class="left_bottom">
+	  													<div class="right_bottom">
+															<div class="left_top">
+																<div class="right_top">	
+																	<h3><span class="title" title="公司新闻">公司新闻</span></h3>
+																	<div class="content"> 
+																		{% placeholder "news" %}
+						            			            		</div>
+						            			            	</div>
+				            			            		</div>
+				            			            	</div>
+			            			            	</div>
+		            			            	</div>
+	                						</div>
+	            						</td>
+	                				</tr>
+	              				</tbody>
+	            			</table>
+	        			</td>
+          				<td width="15" align="center" background="{{STATIC_URL}}images/index_19.gif" style="PADDING-TOP: 10px"><img height="362" src="{{STATIC_URL}}images/index_23.gif" width="1" /></td>
+	          			<td  style="padding-top:5px; padding-right:13px;" align="center" valign="top" background="{{STATIC_URL}}images/index_19.gif">
+	          				<div id="elem-FrontSpecify_show-souyeyoubiantu" name="说明页展示">
+								<div id="FrontSpecify_show-souyeyoubiantu" class="FrontSpecify_show-default">
+		  							<div class="content">
+		    							<div class="style1">
+		    								<table border="0" cellspacing="0" cellpadding="0">
+			    		    		    		<tbody>
+	            		    		    			<tr>
+	                		    		    			<td height="68"><a href="{% page_url "jieyuan" %}"><img src="{{STATIC_URL}}images/index_34.gif" alt="杰缘管业" width="205" height="50" border="0" /></a></td>
+	        										</tr>
+											        <tr>
+											            <td height="68"><a href="{% page_url "wuhan_chaoqian" %}"><img src="{{STATIC_URL}}images/index_40.gif" alt="" width="205" height="50" border="0" /></a></td>
+											        </tr>
+											        <tr>
+											            <td height="68"><a href="{% page_url "jiefan" %}"><img alt="杰繁实业" width="205" height="50" src="{{STATIC_URL}}images/index_43.gif" /></a></td>
+											        </tr>
+											        <tr>
+											            <td height="68"><a href="{% page_url "wuhan_jiefan" %}"><img alt="武汉杰繁" width="205" height="50" src="{{STATIC_URL}}images/index_60.gif" /></a></td>
+											        </tr>
+											        <tr>
+											          <td height="68"><a href="{% page_url "chaoqian_commerce" %}"><img alt="超前国际贸易" width="205" height="50" src="{{STATIC_URL}}images/index_62.gif" /></a></td>
+											        </tr>
+											        <tr>
+											            <td height="68"><img src="{{STATIC_URL}}images/174718ec-def0-4d95-9d8b-41247217c6bd.jpg" width="205" height="50"></td>
+											        </tr>
+	    										</tbody>
+											</table>
+										</div>
+		  							</div>
+								</div>
+	  						</div>
+						</td>
+        			</tr>
+    			</table>
+			</td>
+  		</tr>
+	</table>
+	<table width="1003" border="0" align="center" cellpadding="0" cellspacing="0">
+  		<tr>
+    		<td align="center" bgcolor="#FFFFFF" style="padding-left: 22px;padding-right: 22px; padding-bottom: 14px;">
+    			<table width="925" border="0" cellpadding="0" cellspacing="0">
+			      	<tr>
+			        	<td width="925" align="center"><a href="{% page_url "products" %}"><img src="{{STATIC_URL}}images/products.jpg" border="0" usemap="#Map2" /></a></td>
+			      	</tr>
+		      		<tr>
+		        		<td style="padding-top: 10px;">
+		        			<table width="903" border="0" align="center" cellpadding="0" cellspacing="0" class="kuang">
+		          				<tr>
+		            				<td align="center" bgcolor="#FFFFFF" style="padding: 10px;"><table width="100%"  border="0" cellpadding="0" cellspacing="0">
+		         						<tr>
+		        							    <td bgcolor="#FFFFFF">
+		            								<div id="demoImg" style="margin: 0 auto;width:780px;">
+		            								    {% placeholder products %}
+	          									</div>
+											</td>
+		              					</tr>
+		                			</table>
+		            			</td>
+		          			</tr>
+		        		</table>
+		    			</td>
+		      		</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	{% endblock %}
+	<table width="1003" border="0" align="center" cellpadding="0" cellspacing="0">
+  		<tr>
+    		<td style="padding:22px;" align="center" bgcolor="#FFFFFF" >
+    			<div id="elem-FrontSpecify_show-souyebottom" name="说明页展示">
+					<div id="FrontSpecify_show-souyebottom" class="FrontSpecify_show-default">
+	  					<div class="content">
+	    					<div class="style1">
+	    						<table border="0" cellpadding="0" cellspacing="0" width="100%">
+									<tbody>
+										<tr>
+											<td align="middle" bgcolor="#e5e5e5" height="105" valign="center" width="167">
+												<img alt="" height="72" src="{{STATIC_URL}}images/index_67.gif" width="147" /></td>
+										  <td align="left" bgcolor="#e5e5e5" valign="center" width="766">
+												电话：021-65921520,021-65260395(上海)　027-87332800　87332135(武汉)，852-62220696，852-82022066，852-62065550（香港）<br />
+												传真：021-65260395(上海)　 027-87332900(武汉) 手机：13501646565，13061672501，13916616216（香港）<br />
+												E-mail/：sales@surpassgroup.cn<br />
+											  中文域名：<a href="http://www.chaoqianpipes.com/">超前</a>.com；<a href="http://www.chaoqianpipes.com/">超前钻石</a>.cn；<a href="http://www.chaoqianpipes.com/">武汉超前</a>.com；武汉超前.cn /中国；<a href="http://www.chaoqianpipes.com/">超前集团</a>.com；超前集团.cn <a href="http://www.miibeian.gov.cn" target="_blank">沪ICP备07022922号</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+  						</div>
+					</div>
+				</div>
+			</td>
+  		</tr>
+	</table>
+	{% addtoblock "js" %}
+		<script type="text/javascript" src="{{STATIC_URL}}js/jquery.nivo.slider.pack.js"></script>
+		<script src="{{STATIC_URL}}js/jquery.tools.min.js"></script>
+	{% endaddtoblock %}
+	{% addtoblock "js" %}
+		<script type="text/javascript">
+	    $(window).load(function() {
+		    $('#header-images').nivoSlider();
+			});
+			$("#scroller").scrollable({circular: true}).autoscroll({ autoplay: false });
+		</script>
+	{% endaddtoblock %}
+	{% render_block "js" %}
+</body>
+</html>

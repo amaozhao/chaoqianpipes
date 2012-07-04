@@ -1,0 +1,128 @@
+{% extends "base_2.html" %}
+{% load i18n cms_tags menu_tags sekizai_tags thumbnail %}
+
+{% block title %}{{ object.title }}{% endblock %}
+{% block content %}
+	<table width="1003" border="0" align="center" cellpadding="0" cellspacing="0">
+  		<tbody>
+  			<tr>
+		 	<td align="left" bgcolor="#FFFFFF" style="padding-left: 22px;padding-right: 22px; padding-bottom: 14px;">
+		 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+      				<tbody>
+      					<tr>
+        					<td width="18%" valign="top" style="padding-top: 20px;">
+    							<link href="{{STATIC_URL}}css/FrontCommonContent_list.css" rel="stylesheet" type="text/css" />
+        						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          							
+          							<tbody>
+          								<tr>
+            								<td width="202" height="30" background="{{STATIC_URL}}images/neiye2_05.gif" class="tw_black_str" style="padding-left:20px;">商品展示</td>
+          								</tr>
+          								<tr>
+            								<td background="{{STATIC_URL}}images/neiye2_17.gif" style="padding:18px;">
+            									<div id="sideMenu">
+            										<link href="{{STATIC_URL}}css/FrontProductCategory_slideTree.css" rel="stylesheet" type="text/css">
+													<div id="FrontProductCategory_slideTree-02" class="FrontProductCategory_slideTree-default">
+														<div class="left_bottom">
+															<div class="right_bottom">
+																<div class="left_top">
+																	<div class="right_top">
+																		<ul id="treemenu1">
+																		{% for cat in categories %}
+																			<li><a href="/products/categories/{{cat.pk}}">{{cat.title}}</a></li>
+																		{% endfor %}
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</td>
+          								</tr>
+          								<tr>
+            								<td><img src="{{STATIC_URL}}images/neiye2_19.gif" width="202" height="12"></td>
+          								</tr>
+        							</tbody>
+          							
+          							
+								</table>
+          						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+            						<tbody>
+            							<tr>
+              								<td width="202" style="padding-top:18px;"><a href="{% page_url 'products' %}"><img src="{{STATIC_URL}}images/neiye2_21.gif" width="202" height="30"></a></td>
+            							</tr>
+            							<tr>
+              								<td style="padding-top:5px;"><a href="{% page_url 'contact' %}"><img src="{{STATIC_URL}}images/neiye2_23.gif" width="202" height="30"></a></td>
+            							</tr>
+          							</tbody>
+      							</table>
+  							</td>
+        					<td width="82%" align="right" valign="top" style="padding-top: 22px;">
+        						<table width="733" border="0" cellpadding="0" cellspacing="0">
+	          						<tbody>
+	          							<tr>
+	            							<td height="29" align="left" background="{{STATIC_URL}}images/neiye2_07.gif" class="tw_black_str" style="padding-left:35px;">{% page_attribute "page_title" request.current_page %}</td>
+	          							</tr>
+	          							<tr>
+	          								{% block maincontent %}
+											<td align="left" bgcolor="#FFFFFF" class="zybk" style="padding:20px;">
+												<link href="{{STATIC_URL}}css/FrontProduct_showDetail.css" rel="stylesheet" type="text/css">
+												<div id="elem-FrontProduct_simpleSearch-cpsou" name="商品简单搜索"></div>
+												<div id="elem-FrontProduct_showDetail-cpzhi" name="商品详细信息展示">
+													<div id="FrontProduct_showDetail-cpzhi" class="FrontProduct_showDetail-default">
+											  			<div class="product_content">
+											    			<h3>所属分类：
+											    				{% for cat in object.category.all %}
+											    				{% if forloop.first %}
+												    				<a href="/products/categories/{{cat.pk}}">{{ cat.title }}</a>
+											    				{% endif %}
+											    				{% endfor %}
+											    				 &gt; {{ object.title }}
+									    				 	</h3>
+															<div class="productimgs">
+														     	<div class="product_img">
+														     		<img id="big_image" name="big_image" src="{{ object.src.url }}" alt="">
+													     		</div>
+													 			<div class="img_title">
+													       			<a href="{{ object.src.url }}"><img src="{{STATIC_URL}}images/showProduct_dig.gif" align="absmiddle" border="0" alt=""><span>放大图片</span>	</a>
+														 		</div>
+															</div>
+															<div class="product_info">
+											      				<dl>
+											      					<dt>商品名称：{{ object.title }}</dt>
+											      					<dt>商品编号：</dt>
+																	<dd>{{object.inline_ordering_position}}</dd>
+																	<dt>浏览次数：</dt>
+											        				<dd id="showhitnumber">{{ object.count_viewed }}</dd>
+											        				<dt>上架时间：</dt>
+												        			<dd>{{object.pub_date|date:"Y-M-d"}}</dd>
+											        				<dd class="button_area"></dd>
+											        				<dt>规格：</dt>
+											        				<dd>{{object.spec}}</dd>
+											        				<dt>型号：</dt>
+											        				<dd>{{object.product_type}}</dd>
+											        				<dt>商品描述：</dt>
+											        				<dd><div class="htmlEditer">{{object.description}}</div></dd>
+																</dl>
+											    			</div>
+											  			</div>
+													</div>
+												</div>
+											</td>
+											{% endblock %}
+	          							</tr>
+	          							<tr>
+	            							<td><img src="{{STATIC_URL}}images/neiye2_27.gif" width="733" height="11"></td>
+	          							</tr>
+	    							</tbody>
+    							</table>
+							</td>
+						</tr>
+					</tbody>
+    			</table>
+			</td>
+			</tr>
+		</tbody>
+	</table>
+{% endblock %}

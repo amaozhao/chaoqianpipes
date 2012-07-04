@@ -1,0 +1,38 @@
+{% extends "base_2.html" %}
+{% load i18n cms_tags menu_tags sekizai_tags %}
+
+{% block maincontent %}
+	<link href="{{STATIC_URL}}css/FrontInfo_listMultiPage.css" rel="stylesheet" type="text/css">
+	<td align="left" bgcolor="#FFFFFF" class="zybk" style="padding:20px;">
+	    <div id="elem-FrontInfo_listMultiPage-neww" name="信息列表分页展示">
+			<div class="FrontInfo_listMultiPage-default" id="FrontInfo_listMultiPage-neww">
+				<div class="bottomC">
+					<div class="left_top">
+  						<div class="right_top">
+							<h3 class="title" title="公司新闻">公司新闻</h3>
+							<ul class="content">
+								{% for news in latest_news %}
+								<li class="title">
+								  	<a href="{{ news.get_absolute_url }}" title="{{ news.excerpt }}">{{ news.excerpt }}...</a>
+	      						</li> 
+		    					<li class="date">[{{news.pub_date|date:"Y-M-d"}}]</li>
+								<li class="skim">浏览次数: ({{news.count_viewed}})次</li>
+								{% endfor %}
+		 					</ul>
+    					</div>
+  					</div> 
+ 				</div>
+			</div>
+	   	</div>
+   	</td>
+{% endblock %}
+
+<h1>{% trans "Latest news" %}</h1>
+<ul>
+{% for news in latest %}
+	<li><a href="{{ news.get_absolute_url }}">{{ news.title }}</a></li>
+{% empty %}
+	<li>{% trans "No news yet" %}</li>
+{% endfor %}
+</ul>
+<a href="{% url news_archive_index %}">Archive</a>

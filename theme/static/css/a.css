@@ -1,0 +1,287 @@
+body{
+	margin: 0;
+	padding: 0;
+	padding:0px;
+	margin:0 auto;
+	background-color: #000000;
+	line-height: 22px;
+}
+td {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 22px;
+	color: #666666;
+	text-decoration: none;
+}
+.kuang {
+	border: 1px solid #CCCCCC;
+}
+
+body,td,input,p{
+	font-size: 12px;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height: 24px;
+	color: #666666;
+}
+.tw_black_str {
+	font-size: 12px;
+	font-weight: bold;
+	color: #333333;
+	text-decoration: none;
+}
+.line {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+a{color: #333333;; text-decoration: none; line-height: 24px;}
+a:hover{
+	color: #02458E; 
+	text-decoration: underline; 
+}
+
+img{border:0;}
+
+.indexNewProduct{width: 357px; padding:10px;}
+
+.indexReport{ width: 215px; overflow: hidden;}
+.indexReport .FrontDownload_rank-default h3{display: none;}
+.indexReport .FrontDownload_rank-default ul{	margin: 0; padding: 0;}
+.indexReport .FrontDownload_rank-default li{ margin: 0 0 0 20px;list-style: disc outside none; color: #fff;}
+.indexReport .FrontDownload_rank-default a{color:#b9d6f1;}
+.indexReport .FrontDownload_rank-default a:hover{color:#ff0;}
+
+.indexLife{ width: 215px; overflow: hidden;}
+.indexLife h3{display: none;}
+.indexLife ul{	margin: 0; padding: 0;}
+.indexLife li{ margin: 0 0 0 20px;list-style: disc outside none; color: #b9d6f1;}
+.indexLife a{color:#b9d6f1;}
+.indexLife a:hover{color:#ff0;}
+.indexLife .date, .indexLife p{display: none;}
+
+.indexQuestion{color:#b9d6f1; width: 230px; margin: 0 0 0 25px;}
+.indexQuestion h3{ display: none;}
+.indexQuestion h4{ display: none;}
+.indexQuestion ul{ margin: 0; padding: 0;}
+.indexQuestion ul li{ list-style: none;}
+
+.mainContent, .mainMessage{padding: 0px 0px 0px 0px;}
+.mainContent .content{line-height: 22px;}
+
+#sideMenu{}
+#sideMenu ul{margin:0; padding: 0 0 0 10px;}
+#sideMenu ul li{list-style:none; text-align: left;margin-left:4px; line-height: 24px; margin-bottom: 2px;}
+#sideMenu ul li a{color: #000000;}
+#sideMenu ul li a:hover{color: #FF6600;}
+
+.indexProductCategory #sideMenu ul li{list-style:none; text-align: left;margin-left:20px;}
+
+#footer {color: #85b4fb; border-top:1px dashed #035ada; text-align: right; padding-right:30px;}
+.hang {line-height: 22px;}
+a.hei:link {
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+a.hei:visited {
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+a.hei:hover {
+	font-size: 12px;
+	font-weight: bold;
+	color: #FF6600;
+	text-decoration: underline;
+}
+a.hei:active {
+	font-size: 12px;
+	font-weight: bold;
+	color: #FF6600;
+	text-decoration: underline;
+}
+#syright02a{ float: left; width:480px; height:140px;}
+
+.b-12 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.FrontProductCategory_slideTree-default li a {
+	text-decoration:none;
+	padding-left:15px;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#demoImg {
+	overflow:hidden;
+	width: 890px;
+	padding:5px;
+	margin:0 auto;
+
+}
+#indemoImg {
+	float: left;
+	width: 800%;
+}
+#demoImg1 {
+	float: left;
+}
+#demoImg2 {
+	float: left;
+}
+#demoImg ul.title{display:none;}
+
+
+/*标题名称链接样式*/
+.FrontProductCategory_slideTree-default li a:hover {
+	text-decoration:underline;
+}
+.h-13 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+	line-height:20px;
+}
+.zybk {
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #B6B6B6;
+	border-left-color: #B6B6B6;
+}
+.xhbk {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #EAEAEA;
+}
+
+/* 二级列表链接样式 */
+
+a.ttt:link {
+	text-decoration:none;
+	background-image: url(../images/neiye4_22.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	height: 24px;
+	font-size: 12px;
+	color: #000000;
+	display: block;
+	vertical-align: middle;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #E0E0E0;
+	padding-left: 15px;
+}
+a.ttt:visited {
+	text-decoration:none;
+	background-image: url(../images/neiye4_22.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	height: 24px;
+	font-size: 12px;
+	color: #000000;
+	display: block;
+	vertical-align: middle;
+	padding-left: 15px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #E0E0E0;	
+}
+a.ttt:hover {
+	text-decoration:none;
+	padding-left:15px;
+	background-image: url(../images/neiye4_22.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+
+h4,div,ul,li,span{ padding:0px; margin:0px}
+/* 最外面DIV的样式 */
+#slidingBlock {
+	width:959px;
+	over-flow:hidden;
+	margin:auto;
+	height:48px;
+	background-image: url(../images/200812180856440.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+}
+#nav_box{
+height:33px;
+width:959px;
+text-align:center;
+margin-left: 11px;
+
+}
+#slidingBlock a{ color:#fff;
+text-align:center;
+line-height:35px;
+}
+#slidingBlock a:hover{
+	color:#034D9E;
+	text-align:center;
+	line-height:35px;
+	text-decoration: none;
+}
+#slidingBlock h4 {
+float:left;
+width:82px;
+height:33px;
+line-height:33px;
+text-align:center;
+font-size:12px;
+float:left;
+background-image: url(../images/200812180856440.gif);
+background-repeat: repeat-x;
+}
+#slidingBlock h4.menuNo {
+font-weight:normal;
+color: #fff;
+}
+#slidingBlock h4.menuOn {
+	background-image: url(../images/200812180857440.jpg);
+	background-repeat: no-repeat;
+	background-position: 6px bottom;
+	color:#1368c2
+}
+#line{
+	width:2px;
+	height:33px;
+	background-image: url(../images/200812180858210.jpg);
+	background-repeat: no-repeat;
+	float:left 
+}
+#slidingBlock DIV.slidingList_none {
+    display:none
+}
+#slidingBlock DIV.slidingList {
+	width:auto;
+	margin:0px;
+	padding:0px;
+	height:27px;
+	clear:both;
+	background-image:url(../images/200812180858590.jpg);
+	background-repeat: repeat-x;
+	line-height:27px;
+	display:none;
+}
+#slidingBlock DIV.slidingList ul {
+    margin:0px;padding:0px; list-style:none;
+}
+#slidingBlock DIV.slidingList li {
+float:left;
+height:20px;
+line-height:20px;
+font-size:12px;
+text-indent:20px;
+
+}
+

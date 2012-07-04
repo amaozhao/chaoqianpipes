@@ -1,0 +1,33 @@
+{% extends "base_2.html" %}
+{% load i18n cms_tags menu_tags sekizai_tags %}
+
+{% block title %}{{ object.title }}{% endblock %}
+
+{% block maincontent %}
+	<td align="left" bgcolor="#FFFFFF" class="zybk" style="padding:20px;">
+	    <link href="{{STATIC_URL}}css/FrontTheInfo_showDetail.css" rel="stylesheet" type="text/css">
+		<div class="mainContent">
+			<div class="FrontTheInfo_showDetail-default" id="FrontTheInfo_showDetail-neww">
+  				<div class="head">
+	  				<div class="headright">
+	    				<ul>
+	    					<li class="print2">
+								<span class="date">{{ object.pub_date|date:"Y-M-d" }}</span>
+								<span class="time">{{ object.pub_date|date:"H:i:s" }}</span>
+								<span class="browes">(已经被浏览{{news.count_viewed}}次)</span>
+							</li>
+						</ul>
+  					</div>
+					<p class="line"></p>
+					<div class="headleft">
+  						<h3>{{ object.title }}</h3>
+  					</div>
+  					<p class="line"></p>
+  				</div>
+  				<div class="content">
+  					{{ object.content|safe }}
+				</div>
+			</div>
+		</div>
+   	</td>
+{% endblock %}
